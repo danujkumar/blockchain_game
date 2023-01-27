@@ -65,7 +65,7 @@ function checkIfWeGotNft() {
         const nftToRemove = document.querySelectorAll("[data-nft]")[0]
         nftToRemove.remove()
         nftScore++
-        // nftScoreElem.textContent = `nft score : ${nftScore}`
+        nftScoreElem.textContent = `nft score : ${nftScore}`
     }
 }
 
@@ -75,7 +75,7 @@ function updateSpeedScale(delta) {
 
 function updateScore(delta) {
     score += delta * 0.01
-    // scoreElem.textContent = `Wei score: ${Math.floor(score)}`
+    scoreElem.textContent = `Wei score: ${Math.floor(score)}`
 }
 
 function handleStart() {
@@ -101,7 +101,7 @@ function handleLose() {
     gweiTotalScoreEleme.textContent = `Wei total score: ${window.totalGweiScore}`
 
     nftScore = 0
-    // nftScoreElem.textContent = `nft score: ${nftScore}`
+    nftScoreElem.textContent = `nft score: ${nftScore}`
 
     setTimeout(() => {
         document.addEventListener("keydown",handleStart, {once:true})
