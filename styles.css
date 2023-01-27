@@ -32,6 +32,11 @@
     color:white;
     cursor:pointer;
   }
+
+  h1{
+    margin:30%;
+    display:inline;
+  }
   
   .nftTotalScore {
     position: absolute;
